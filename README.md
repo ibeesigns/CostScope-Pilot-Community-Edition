@@ -113,3 +113,14 @@ My main goal is simply to share useful work with the community and hopefully hel
 You can also connect with me on LinkedIn to follow future projects, templates, and community releases across Power Platform, Microsoft technologies, software development, and other technical projects.
 
 Thank you for downloading and supporting the Community Edition.
+
+## Support the Project
+
+This project is shared freely with the community.
+
+If it saves you time, helps you learn something new, or supports your business, and you would like to support future community releases, you are welcome to sponsor my work through GitHub.
+
+There is absolutely no obligation. Simply using the project and building something useful with it is already appreciated.
+
+❤️ GitHub Sponsors:
+https://github.com/sponsors/ibeesigns
