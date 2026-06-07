@@ -1,0 +1,270 @@
+# Cost & Time Estimation App
+
+## Quick Setup and User Guide
+
+Thank you for downloading and testing the Cost & Time Estimation App.
+
+This solution was built using standard Microsoft Power Platform components to help estimate project cost, delivery time, resource availability, and generate professional quote documents.
+
+The application is designed to work with SharePoint Lists and does not require premium connectors.
+
+---
+
+# Before You Start
+
+## 1. Import the Solution
+
+Import the Power Apps solution into your environment.
+
+Ensure all SharePoint Lists are available and connected.
+
+---
+
+## 2. Import the Service Library
+
+Import the provided Service Library CSV into the SharePoint list:
+
+**Scope_Master_IT_Service_Library**
+
+This contains the sample services used for estimation.
+
+---
+
+## 3. Import Sample Projects
+
+Import the provided sample project data into:
+
+**Scope_Projects**
+
+This will allow you to test the full workflow immediately.
+
+---
+
+## 4. Add the New SharePoint Column
+
+A new SharePoint column has been introduced.
+
+### Column Name
+
+```text
+Discount(%)
+```
+
+### Type
+
+```text
+Number
+```
+
+### Decimal Places
+
+```text
+0
+```
+
+This column stores the project discount percentage and is automatically used throughout the quotation and pricing calculations.
+
+Example:
+
+| Discount(%) |
+| ----------- |
+| 0           |
+| 5           |
+| 10          |
+| 15          |
+| 20          |
+
+The application will automatically calculate:
+
+* Amount Saved
+* Total After Discount
+* GST
+* Total Including GST
+
+---
+
+# Using the Solution
+
+## Step 1
+
+### Open the App
+
+Launch the application.
+
+Select:
+
+**Start Estimating**
+
+---
+
+## Step 2
+
+### Create or Select a Project
+
+Choose an existing project or create a new one.
+
+Enter:
+
+* Project Name
+* Client
+* Start Date
+* Weekly Available Hours
+* Buffer Percentage
+* Discount Percentage
+
+---
+
+## Step 3
+
+### Build Your Estimate
+
+Open the Services tab.
+
+Select the required services from the Master Service Library.
+
+The system will automatically:
+
+* Add services
+* Calculate hours
+* Calculate cost
+* Calculate project duration
+* Update the estimate summary
+
+---
+
+## Step 4
+
+### Review Timeline
+
+Open the Timeline tab.
+
+The system will estimate:
+
+* Working hours
+* Estimated days
+* Estimated weeks
+* Start date
+* Completion date
+
+A visual calendar is generated to help with delivery planning.
+
+---
+
+## Step 5
+
+### Review Project Tracking
+
+Select:
+
+**Send to Project Tracker Board**
+
+This creates a tracking record for the project.
+
+The tracking board helps monitor:
+
+* Active projects
+* Delivery progress
+* Project status
+* Estimated completion
+
+---
+
+## Step 6
+
+### Review Financials
+
+Open the Financials tab.
+
+The quotation automatically calculates:
+
+* Base Estimate
+* Buffer Allowance
+* Standard Total
+* Discount Amount
+* Total After Discount
+* GST
+* Total Including GST
+
+---
+
+## Step 7
+
+### Print or Email Quote
+
+Use the Print button to generate a printable quotation.
+
+Use the Email button to send the quotation to the client.
+
+The generated quote includes:
+
+* Client details
+* Service breakdown
+* Timeline
+* Cost summary
+* GST
+* Final project value
+
+---
+
+# Typical Workflow
+
+```text
+Create Project
+        ↓
+Select Services
+        ↓
+Generate Estimate
+        ↓
+Review Timeline
+        ↓
+Send to Tracking Board
+        ↓
+Review Financials
+        ↓
+Print Quote
+        ↓
+Email Client
+```
+
+---
+
+# Customisation
+
+The Service Library is fully configurable.
+
+You can:
+
+* Add new services
+* Change hourly rates
+* Add new categories
+* Modify phases
+* Adjust delivery assumptions
+* Expand the service catalogue
+
+The solution is designed to adapt to different organisations and industries.
+
+---
+
+# Technical Notes
+
+Built using:
+
+* Power Apps
+* SharePoint Lists
+* SharePoint Document Library
+* Power Automate
+* HTML Text Controls
+
+No premium connectors are required.
+
+No third party plugins are required.
+
+---
+
+# Need Help?
+
+If you have any questions, need assistance setting up the solution, or would like help tailoring it to your organisation, please feel free to reach out.
+
+Feedback, suggestions, and improvement ideas are always welcome.
+
+If you encounter any issues during setup, or simply want to understand how a feature works, just ask and I will be happy to help.
